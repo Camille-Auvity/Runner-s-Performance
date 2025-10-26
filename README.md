@@ -1,3 +1,128 @@
+# FRENCH VERSION BELOW
+# Runner-s-Performance
+
+Analysis and Prediction of Runners’ Performances
+
+## 🏃 Project Overview
+
+**RunAI** is a project focused on the **analysis and prediction of athletic performance**, specifically for **running and trail running**.  
+Its goal is to provide an intelligent platform that enables runners to **track their progress**, **analyze their performances**, and **predict their future results** using **machine learning algorithms**.
+
+### Main Features
+
+- **Runner Clustering** based on performance profiles  
+- **Prediction of future speeds and records** using time series models (ARIMA/SARIMAX)  
+- **Personalized race recommendations** adapted to each runner’s level  
+- **Interactive graphical interface** for exploring data and results  
+
+---
+
+## 📂 Repository Structure
+
+| File                                                                        | Description                                                        |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| `Total-PI-Final.py`                                                         | **Main script**: complete project pipeline                         |
+| `InterfaceFinal.py`                                                         | Tkinter GUI for interacting with results                           |
+| `decompresserGPX.py`                                                        | Decompression and reading of `.gpx` or `.fit.gz` files             |
+| `TopographieCourse.py`                                                      | Analysis of race elevation profiles                                |
+| `Evolution-Pace-Distance-1Graph.py`                                         | Visualization of pace evolution over distance                      |
+| `Evolution-Pace-Distance-NGraph.py`                                         | Multi-runner pace evolution analysis                               |
+| `Evolution_Pace_MultiFig.py`                                                | Comparison of multiple runners’ progressions                       |
+| `Algo-Clustering.py`                                                        | Central script combining different clustering algorithms           |
+| `Algo-k-means-tSNE.py`, `Algo-DBSCAN-tSNE.py`, `Algo-Gaussian-tSNE.py`, etc. | Clustering scripts combining various algorithms with t-SNE         |
+| `Algo-k-means-ACP.py`                                                       | Clustering after dimensionality reduction with PCA                 |
+| `README.md`                                                                 | This file 😉                                                       |
+
+---
+
+## 🔬 Methodology
+
+### 1. Data Collection and Preparation
+
+Data is sourced from **Strava** in `.csv` or `.gpx` formats.  
+It includes distance, pace, average speed, time, elevation gain, and more.  
+All files are cleaned, standardized, and normalized to ensure consistent analysis.
+
+### 2. Clustering and Classification
+
+Runners are grouped based on their performance profiles using:
+
+- **K-Means**
+- **DBSCAN**
+- **Gaussian Mixture Model**
+- **Agglomerative Clustering**
+
+Dimensionality reduction is applied via **PCA** or **t-SNE** for intuitive 2D/3D visualization.
+
+### 3. Performance Prediction
+
+Using **ARIMA/SARIMAX** and **polynomial regression** models, the system predicts:
+
+- The evolution of average speed over time  
+- Future performance records on 5K, 10K, half-marathon, and marathon distances  
+
+### 4. Race Recommendation
+
+Based on each runner’s cluster and performance level, the system suggests races tailored to their profile.
+
+### 5. Graphical Interface
+
+A user-friendly interface allows for the exploration of:
+
+- Runner clusters and projections  
+- Predicted performance evolution  
+- Temporal and topographic visualizations  
+
+---
+
+## 📊 Technologies Used
+
+| Domain                   | Tools / Libraries             |
+| ------------------------- | ----------------------------- |
+| **Main language**         | Python                        |
+| **Data analysis**         | Pandas, NumPy                 |
+| **Visualization**         | Matplotlib, Seaborn           |
+| **Machine Learning**      | Scikit-Learn                  |
+| **Time Series**           | Statsmodels (ARIMA, SARIMAX)  |
+| **Graphical Interface**   | Tkinter                       |
+| **GPS File Handling**     | GPXPy, gzip                   |
+
+---
+
+## ✅ Key Results
+
+- **Meaningful segmentation** of runners into performance-based clusters  
+- **Clear visualizations** through dimensionality reduction (t-SNE, PCA)  
+- **Accurate performance predictions** over time  
+- **Functional GUI** for exploration and personalized race recommendations  
+
+---
+
+## ⚠️ Challenges
+
+- Heterogeneous data formats (`.fit`, `.gpx`, missing values) across users  
+- Limited dataset size, affecting model robustness  
+- Lack of geolocated data for nearby race recommendations  
+
+---
+
+## 🚀 Future Work
+
+- Full integration of `.fit` and `.fit.gz` file formats  
+- Extension to **trail running** and other sports  
+- Improved predictive performance with **deep learning (LSTM)** models  
+- Addition of a **personalized training tracking module**  
+
+---
+
+## 👤 Author
+
+**Camille Auvity**  
+Data Science Student – Mines Saint-Étienne x EM Lyon  
+📧 (mailto:caauvity@orange.fr)
+
+------------------------------------------------------
+# FRENCH VERSION
 # Runner-s-Performance
 
 Analyse et Prédiction des Performances des Coureurs
@@ -106,4 +231,4 @@ Une interface simple permet d’explorer :
 
 **Camille Auvity**
 Étudiant en Data Science – Mines Saint-Étienne x EM Lyon
-📧 [[camille.auvity@example.com](mailto:camille.auvity@example.com)] 
+📧 (mailto:caauvity@orange.fr)
