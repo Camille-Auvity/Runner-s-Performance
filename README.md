@@ -30,15 +30,15 @@ Le projet combine plusieurs volets :
 | `Algo-k-means-ACP.py`                                                        | Clustering après réduction de dimension par ACP                    |
 | `README.md`                                                                  | Ce fichier 😉                                                      |
 
-## 🧠 Méthodologie
+##  Méthodologie
 
-### 1️⃣ Collecte et préparation des données
+### 1 Collecte et préparation des données
 
 Les données proviennent de **Strava** sous forme de fichiers `.csv` ou `.gpx`.
 Elles contiennent : distance, allure, vitesse moyenne, temps, D+, etc.
 Les fichiers sont nettoyés, homogénéisés et normalisés pour permettre les analyses.
 
-### 2️⃣ Clustering et classification
+### 2 Clustering et classification
 
 Les coureurs sont regroupés selon leurs profils via différentes méthodes :
 
@@ -49,18 +49,18 @@ Les coureurs sont regroupés selon leurs profils via différentes méthodes :
 
 La réduction de dimension est effectuée avec **ACP** ou **t-SNE**, facilitant la visualisation 2D/3D.
 
-### 3️⃣ Prédiction des performances
+### 3 Prédiction des performances
 
 Les modèles **ARIMA/SARIMAX** et **régressions polynomiales** sont utilisés pour prédire :
 
 * L’évolution de la vitesse moyenne dans le temps
 * Les records futurs sur 5 km, 10 km, semi-marathon, marathon
 
-### 4️⃣ Recommandation de courses
+### 4 Recommandation de courses
 
 À partir du profil de chaque coureur (cluster et niveau), le système suggère une course adaptée à son niveau de performance.
 
-### 5️⃣ Interface graphique
+### 5 Interface graphique
 
 Une interface simple permet d’explorer :
 
@@ -82,20 +82,20 @@ Une interface simple permet d’explorer :
 | **Interface graphique**  | Tkinter                      |
 | **Gestion fichiers GPS** | GPXPy, gzip                  |
 
-## 💡 Résultats clés
+## Résultats clés
 
 * Segmentation des coureurs en **niveaux cohérents** selon leurs performances.
 * **Visualisations claires** grâce à la réduction de dimension (t-SNE).
 * **Prédictions réalistes** de l’évolution des performances dans le temps.
 * **Interface fonctionnelle** pour explorer les résultats et recommandations.
 
-## ⚙️ Difficultés rencontrées
+## Difficultés rencontrées
 
 * Données hétérogènes selon les utilisateurs (formats `.fit`, `.gpx`, valeurs manquantes).
 * Volume de données limité réduisant la robustesse des modèles.
 * Manque de données géolocalisées pour la recommandation de courses proches.
 
-## 🔮 Perspectives d’évolution
+## Perspectives d’évolution
 
 * Intégration complète des fichiers `.fit` et `.fit.gz`.
 * Extension au **trail** et à d’autres disciplines sportives.
