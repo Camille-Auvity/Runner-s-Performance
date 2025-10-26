@@ -1,5 +1,4 @@
 # Runner-s-Performance
-## English Version below
 
 Analyse et Prédiction des Performances des Coureurs
 
@@ -14,36 +13,6 @@ Le projet combine plusieurs volets :
 * **Prédiction des vitesses et records futurs** à l’aide de modèles de séries temporelles (ARIMA/SARIMAX).
 * **Recommandation de courses adaptées** au niveau de chaque coureur.
 * **Interface graphique interactive** facilitant l’exploration des résultats.
-
-## 🚀 Lancer le projet
-
-### 🧩 Prérequis
-
-Avant de lancer le projet, assure-toi d’avoir installé les dépendances suivantes :
-
-```bash
-pip install numpy pandas matplotlib seaborn scikit-learn statsmodels tkinter
-```
-
----
-
-### ▶️ Exécution
-
-Le fichier principal à exécuter est :
-
-```bash
-python Total-PI-Final.py
-```
-
-Ce script orchestre l’ensemble du pipeline :
-
-* Chargement et nettoyage des données Strava
-* Application des algorithmes de clustering (K-Means, DBSCAN, Gaussian Mixture, etc.)
-* Visualisation 2D/3D via t-SNE ou ACP
-* Prédiction des performances à partir des historiques
-* Lancement de l’interface utilisateur (Tkinter)
-
----
 
 ## 📂 Structure du dépôt
 
@@ -60,8 +29,6 @@ Ce script orchestre l’ensemble du pipeline :
 | `Algo-k-means-tSNE.py`, `Algo-DBSCAN-tSNE.py`, `Algo-Gaussian-tSNE.py`, etc. | Scripts dédiés à chaque méthode de clustering couplée à t-SNE      |
 | `Algo-k-means-ACP.py`                                                        | Clustering après réduction de dimension par ACP                    |
 | `README.md`                                                                  | Ce fichier 😉                                                      |
-
----
 
 ## 🧠 Méthodologie
 
@@ -115,8 +82,6 @@ Une interface simple permet d’explorer :
 | **Interface graphique**  | Tkinter                      |
 | **Gestion fichiers GPS** | GPXPy, gzip                  |
 
----
-
 ## 💡 Résultats clés
 
 * Segmentation des coureurs en **niveaux cohérents** selon leurs performances.
@@ -124,15 +89,11 @@ Une interface simple permet d’explorer :
 * **Prédictions réalistes** de l’évolution des performances dans le temps.
 * **Interface fonctionnelle** pour explorer les résultats et recommandations.
 
----
-
 ## ⚙️ Difficultés rencontrées
 
 * Données hétérogènes selon les utilisateurs (formats `.fit`, `.gpx`, valeurs manquantes).
 * Volume de données limité réduisant la robustesse des modèles.
 * Manque de données géolocalisées pour la recommandation de courses proches.
-
----
 
 ## 🔮 Perspectives d’évolution
 
@@ -140,8 +101,6 @@ Une interface simple permet d’explorer :
 * Extension au **trail** et à d’autres disciplines sportives.
 * Amélioration des modèles prédictifs via des approches deep learning (LSTM).
 * Ajout d’un module de **suivi d’entraînement personnalisé**.
-
----
 
 ## 👤 Auteur
 
