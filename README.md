@@ -3,7 +3,7 @@
 
 Analysis and Prediction of Runners’ Performances
 
-## 🏃 Project Overview
+## Project Overview
 
 **RunAI** is a project focused on the **analysis and prediction of athletic performance**, specifically for **running and trail running**.  
 Its goal is to provide an intelligent platform that enables runners to **track their progress**, **analyze their performances**, and **predict their future results** using **machine learning algorithms**.
@@ -35,7 +35,7 @@ Its goal is to provide an intelligent platform that enables runners to **track t
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 ### 1. Data Collection and Preparation
 
@@ -75,7 +75,7 @@ A user-friendly interface allows for the exploration of:
 
 ---
 
-## 📊 Technologies Used
+## Technologies Used
 
 | Domain                   | Tools / Libraries             |
 | ------------------------- | ----------------------------- |
@@ -89,7 +89,7 @@ A user-friendly interface allows for the exploration of:
 
 ---
 
-## ✅ Key Results
+## Key Results
 
 - **Meaningful segmentation** of runners into performance-based clusters  
 - **Clear visualizations** through dimensionality reduction (t-SNE, PCA)  
@@ -98,7 +98,7 @@ A user-friendly interface allows for the exploration of:
 
 ---
 
-## ⚠️ Challenges
+## Challenges
 
 - Heterogeneous data formats (`.fit`, `.gpx`, missing values) across users  
 - Limited dataset size, affecting model robustness  
@@ -106,7 +106,7 @@ A user-friendly interface allows for the exploration of:
 
 ---
 
-## 🚀 Future Work
+## Future Work
 
 - Full integration of `.fit` and `.fit.gz` file formats  
 - Extension to **trail running** and other sports  
@@ -115,11 +115,11 @@ A user-friendly interface allows for the exploration of:
 
 ---
 
-## 👤 Author
+## Author
 
 **Camille Auvity**  
 Data Science Student – Mines Saint-Étienne x EM Lyon  
-📧 (mailto:caauvity@orange.fr)
+mailto:caauvity@orange.fr
 
 ------------------------------------------------------
 # FRENCH VERSION
@@ -139,7 +139,7 @@ Le projet combine plusieurs volets :
 * **Recommandation de courses adaptées** au niveau de chaque coureur.
 * **Interface graphique interactive** facilitant l’exploration des résultats.
 
-## 📂 Structure du dépôt
+## Structure du dépôt
 
 | Fichier                                                                      | Description                                                        |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -155,7 +155,7 @@ Le projet combine plusieurs volets :
 | `Algo-k-means-ACP.py`                                                        | Clustering après réduction de dimension par ACP                    |
 | `README.md`                                                                  | Ce fichier 😉                                                      |
 
-##  Méthodologie
+## Méthodologie
 
 ### 1 Collecte et préparation des données
 
@@ -195,7 +195,7 @@ Une interface simple permet d’explorer :
 
 ---
 
-## 📊 Technologies utilisées
+## Technologies utilisées
 
 | Domaine                  | Outils / Bibliothèques       |
 | ------------------------ | ---------------------------- |
@@ -227,8 +227,8 @@ Une interface simple permet d’explorer :
 * Amélioration des modèles prédictifs via des approches deep learning (LSTM).
 * Ajout d’un module de **suivi d’entraînement personnalisé**.
 
-## 👤 Auteur
+## Auteur
 
 **Camille Auvity**
 Étudiant en Data Science – Mines Saint-Étienne x EM Lyon
-📧 (mailto:caauvity@orange.fr)
+mail to :caauvity@orange.fr
